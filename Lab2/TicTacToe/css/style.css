@@ -1,0 +1,50 @@
+#centerContainer .row {
+    flex-shrink: 5;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron {
+    background: lightblue !important;
+}
+
+.table-bordered {
+    align-items: center;
+    justify-content: center;
+}
+
+.img-responsive{
+    margin: 0 auto;
+    border: darkblue solid 2px;
+    border-radius: 5px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.col-sm-2.imgTrigger {
+    margin-right: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    width: 100px;
+    height: 100px;
+}
+#headerColor, #winner {
+    color: darkblue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.row.no-gutters {
+    border-top-color: transparent;
+}
+
+.col-sm-2.imgTrigger {
+    border-top-color: transparent;
+    border: none;
+}

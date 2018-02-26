@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TicTacToe">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+<div class="container" ng-controller="TicTacToeController">
+    <h1 id="headerColor">Tic-Tac-Toe</h1><br>
+    <h2 id="winner"></h2>
+    <div class="jumbotron">
+        <div class="container" id="centerContainer">
+            <div class="row">
+                <table class="table">
+                    <tr class="row no-gutters">
+
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(1)"><img class="img-responsive" id="square1"
+                                                                                     src={{newImg}}></a></td>
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(2)"><img class="img-responsive" id="square2"
+                                                                                     src={{newImg}}></a></td>
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(3)"><img class="img-responsive" id="square3"
+                                                                                     src={{newImg}}></a></td>
+                    </tr>
+                    <tr class="row no-gutters">
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(4)"><img class="img-responsive" id="square4"
+                                                                                     src={{newImg}}></a></td>
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(5)"><img class="img-responsive" id="square5"
+                                                                                     src={{newImg}}></a></td>
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(6)"><img class="img-responsive" id="square6"
+                                                                                     src={{newImg}}></a></td>
+                    </tr>
+                    <tr class="row no-gutters">
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(7)"><img class="img-responsive" id="square7"
+                                                                                     src={{newImg}}></a></td>
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(8)"><img class="img-responsive" id="square8"
+                                                                                     src={{newImg}}></a></td>
+                        <td class="col-sm-2 imgTrigger"><a ng-click="setMark(9)"><img class="img-responsive" id="square9"
+                                                                                     src={{newImg}}></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
